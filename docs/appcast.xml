@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+    <channel>
+        <title>PostureAI</title>
+        <link>https://github.com/a-normal-chill-guy/PostureAI</link>
+        <description>Most recent updates to PostureAI</description>
+        <language>en</language>
+        <!-- release.sh inserts new release items below this line -->
+    </channel>
+</rss>

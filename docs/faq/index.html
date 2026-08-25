@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FAQ - PostureAI</title>
+<meta name="description" description="Frequently asked questions about PostureAI.">
+<link rel="icon" type="image/png" href="../assets/app-icon.png">
+<meta property="og:title" content="FAQ - PostureAI">
+<meta property="og:description" content="Frequently asked questions about PostureAI.">
+<meta property="og:image" content="https://a-normal-chill-guy.github.io/PostureAI/assets/app-icon.png">
+<meta property="og:url" content="https://a-normal-chill-guy.github.io/PostureAI/faq/">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#94D1FF">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  font-size:17px;line-height:1.4705882353;font-weight:400;letter-spacing:-.022em;
+  color:#1d1d1f;background:#fff;
+  font-family:"SF Pro Text","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+}
+a{color:#06c;text-decoration:none}
+a:hover{text-decoration:underline;color:#0066cc}
+img{display:block}
+
+#globalnav{
+  position:sticky;top:0;z-index:999;height:44px;
+  background:rgba(148,209,255,0.88);
+  -webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);
+}
+#globalnav .gn-content{max-width:1024px;height:44px;margin:0 auto;padding:0 22px;display:flex;align-items:center;justify-content:space-between}
+.gn-brand{display:flex;align-items:center;gap:8px;color:#1a2744;text-decoration:none}
+.gn-brand:hover{text-decoration:none;opacity:.88}
+.gn-brand img{width:20px;height:20px;border-radius:4px}
+.gn-brand span{font-size:15px;font-weight:400;letter-spacing:-.022em}
+.gn-links{display:flex;align-items:center;gap:28px}
+.gn-links a{font-size:12px;line-height:44px;color:rgba(26,39,68,.7);letter-spacing:-.01em}
+.gn-links a:hover{color:#1a2744;text-decoration:none}
+
+#ac-localnav{
+  position:sticky;top:44px;z-index:998;height:52px;
+  background:rgba(251,251,253,.92);
+  -webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);
+  border-bottom:1px solid rgba(0,0,0,.16);
+}
+#ac-localnav .ln-content{max-width:1024px;height:52px;margin:0 auto;padding:0 22px;display:flex;align-items:center;justify-content:space-between}
+.ln-title{font-size:21px;line-height:1.19048;font-weight:600;letter-spacing:.011em;font-family:"SF Pro Display","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sans-serif;color:#1a2744}
+.ln-links{display:flex;gap:26px}
+.ln-links a{font-size:12px;color:#424245}
+
+.section-hero{padding-top:70px;padding-bottom:50px;text-align:center}
+.hero-content{max-width:980px;margin:0 auto;padding:0 22px}
+.section-hero h1{
+  font-family:"SF Pro Display","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:48px;line-height:1.0834933333;font-weight:600;letter-spacing:-.003em;color:#1a2744;
+}
+.typography-intro{
+  margin:24px auto 0;max-width:720px;
+  font-family:"SF Pro Display","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:21px;line-height:1.381002381;font-weight:400;letter-spacing:.011em;color:#1d1d1f;
+}
+
+/* Accordion (same pattern as Privacy Policy) */
+.faq-list{max-width:850px;margin:0 auto;padding:0 22px 60px}
+.acc{border-top:1px solid #d2d2d7}
+.acc:last-of-type{border-bottom:1px solid #d2d2d7}
+.header-wrapper{position:relative}
+.accordion-headline{
+  cursor:pointer;color:#1a2744;display:block;
+  padding-top:1.55rem;padding-bottom:1.55rem;padding-right:52px;margin:0;
+  font-family:"SF Pro Display","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:19px;line-height:1.21053;font-weight:600;letter-spacing:.012em;
+}
+.icon-plus{
+  position:absolute;top:50%;right:.29rem;transform:translateY(-50%);
+  width:44px;height:44px;padding:0;border:0;background:none;cursor:pointer;color:#86868b;
+}
+.icon-plus::before,.icon-plus::after{content:"";position:absolute;left:50%;top:50%;background:#86868b;transition:transform .25s ease}
+.icon-plus::before{width:15px;height:1.5px;transform:translate(-50%,-50%)}
+.icon-plus::after{width:1.5px;height:15px;transform:translate(-50%,-50%)}
+.accordion-item.open .icon-plus{transform:translateY(-50%) rotate(45deg)}
+.accordion-panel{background-color:#fff;display:none;margin-top:0;padding-bottom:1.55rem}
+.accordion-panel[aria-hidden="false"]{display:block}
+.accordion-content p{margin-bottom:.8em}
+.accordion-content ul{margin-inline-start:1.6em;margin-bottom:.8em}
+.accordion-content li{margin-bottom:.5em}
+.accordion-content b{font-weight:600}
+.accordion-content code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.86em;background:#f5f5f7;border-radius:5px;padding:2px 6px}
+
+.sosumi-text{padding:17px 0 11px;border-top:1px solid #d2d2d7}
+.sosumi-content{max-width:980px;margin:0 auto;padding:0 22px}
+.sosumi-text p{font-size:12px;line-height:1.33337;color:#86868b;padding-bottom:.8em}
+
+#ac-globalfooter{background:#f5f5f7;border-top:1px solid #d2d2d7;font-size:12px;line-height:1.33337;color:#86868b}
+.gf-content{max-width:980px;margin:0 auto;padding:20px 22px 40px}
+.ac-gf-footer{display:flex;flex-wrap:wrap;gap:8px 24px;padding-top:16px;justify-content:space-between}
+.ac-gf-legal a{color:#424245;border-right:1px solid #d2d2d7;padding-right:10px;margin-right:10px}
+.ac-gf-legal a:last-child{border-right:0}
+
+@media print{#globalnav,#ac-localnav{position:static;background:#fff}.accordion-panel{display:block !important}.icon-plus{display:none}}
+</style>
+</head>
+<body>
+
+<nav id="globalnav" aria-label="Global">
+  <div class="gn-content">
+    <a class="gn-brand" href="../">
+      <img src="https://raw.githubusercontent.com/a-normal-chill-guy/PostureAI/main/docs/assets/app-icon.png" alt="">
+      <span>PostureAI</span>
+    </a>
+    <div class="gn-links">
+      <a href="https://github.com/a-normal-chill-guy/PostureAI/releases">Releases</a>
+      <a href="https://github.com/a-normal-chill-guy/PostureAI/issues">Report an Issue</a>
+    </div>
+  </div>
+</nav>
+
+<nav id="ac-localnav" aria-label="Local">
+  <div class="ln-content">
+    <span class="ln-title">FAQ</span>
+    <div class="ln-links">
+      <a href="../start/">Get Started</a>
+      <a href="../legal/">Legal</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+  <section class="section-hero header-text-center">
+    <div class="hero-content">
+      <h1>Frequently Asked Questions</h1>
+      <p class="typography-intro center">Quick answers about installing, permissions, tracking, and updates.</p>
+    </div>
+  </section>
+
+  <div class="faq-list">
+
+    <div class="acc">
+      <div class="header-wrapper">
+        <h2 id="q-open" class="accordion-headline">Why does macOS say PostureAI &ldquo;can&rsquo;t be opened&rdquo;?</h2>
+        <button class="icon-plus" aria-expanded="false" aria-controls="a-open" aria-labelledby="q-open"></button>
+      </div>
+      <div class="accordion-panel" id="a-open" aria-hidden="true">
+        <div class="accordion-content">
+          <p>Direct-download builds are not notarized with Apple. This is expected and safe for a first launch:</p>
+          <ul>
+            <li>Right-click <b>PostureAI.app</b> in Applications and choose <b>Open</b>, then confirm.</li>
+            <li>If still blocked: open <b>System Settings &rarr; Privacy &amp; Security</b>, scroll down, and click <b>Open Anyway</b>.</li>
+          </ul>
+          <p>This is required once per install &mdash; automatic updates afterwards install without any warnings.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="acc">
+      <div class="header-wrapper">
+        <h2 id="q-airpods" class="accordion-headline">Which headphones work with AirPods mode?</h2>
+        <button class="icon icon-plus" aria-expanded="false" aria-controls="a-airpods" aria-labelledby="q-airpods"></button>
+      </div>
+      <div class="accordion-panel" id="a-airpods" aria-hidden="true">
+        <div class="accordion-content">
+          <p>AirPods Pro, AirPods Max, and AirPods 3rd generation or newer &mdash; they contain the head-tracking motion sensors PostureAI reads. You&rsquo;ll also need <b>macOS 14 (Sonoma) or later</b> for this mode.</p>
+          <p>Other headphones aren&rsquo;t supported yet; broader motion-headphone support is on the roadmap.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="acc">
+      <div class="header-wrapper">
+        <h2 id="q-camera13" class="accordion-headline">Does camera mode work on macOS 13?</h2>
+        <button class="icon icon-plus" aria-expanded="false" aria-controls="a-camera13" aria-labelledby="q-camera13"></button>
+      </div>
+      <div class="accordion-panel" id="a-camera13" aria-hidden="true">
+        <div class="accordion-content">
+          <p>Yes &mdash; camera-based posture monitoring works on <b>macOS 13.0 (Ventura) and later</b>. Only AirPods head-tracking requires macOS 14+.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="acc">
+      <div class="header-wrapper">
+        <h2 id="q-permission" class="accordion-headline">I denied a permission by mistake. How do I fix it?</h2>
+        <button class="icon icon-plus" aria-expanded="false" aria-controls="a-permission" aria-labelledby="q-permission"></button>
+      </div>
+      <div class="accordion-panel" id="a-permission" aria-hidden="true">
+        <div class="accordion-content">
+          <p>Open <b>System Settings &rarr; Privacy &amp; Security</b> &rarr; Camera (or Motion &amp; Fitness, Bluetooth) and toggle PostureAI back on. The related feature resumes immediately &mdash; no reinstall needed.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="acc">
+      <div class="header-wrapper">
+        <h2 id="q-blur" class="accordion-headline">The blur never appears. What should I check?</h2>
+        <button class="icon icon-plus" aria-expanded="false" aria-controls="a-blur" aria-labelledby="q-blur"></button>
+      </div>
+      <div class="accordion-panel" id="a-blur" aria-hidden="true">
+        <div class="accordion-content">
+          <ul>
+            <li><b>Recalibrate</b> from the menu bar while sitting up straight &mdash; an old baseline is the most common cause.</li>
+            <li>Raise <b>sensitivity</b> or lower the <b>dead zone</b> in Settings.</li>
+            <li>Check that monitoring is ON and you&rsquo;re not paused (battery saver, Focus mode, or presenting).</li>
+            <li>Camera mode: make sure your face/head is visible in frame with decent lighting.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="acc">
+      <div class="header-wrapper">
+        <h2 id="q-recording" class="accordion-headline">Is my camera recording me?</h2>
+        <button class="icon icon-plus" aria-expanded="false" aria-controls="a-recording" aria-labelledby="q-recording"></button>
+      </div>
+      <div class="accordion-panel" id="a-recording" aria-hidden="true">
+        <div class="accordion-content">
+          <p>No. Frames are analyzed in memory, moment to moment, to estimate pose &mdash; nothing is ever saved, recorded, or transmitted. You can verify: the green camera indicator appears only while monitoring is active, and there is no video file anywhere on disk.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="acc">
+      <div class="header-wrapper">
+        <h2 id="q-battery" class="accordion-headline">How much battery does it use?</h2>
+        <button class="icon icon-plus" aria-expanded="false" aria-controls="a-battery" aria-labelledby="q-battery"></button>
+      </div>
+      <div class="accordion-panel" id="a-battery" aria-hidden="true">
+        <div class="accordion-content">
+          <p>Very little. Detection runs in short bursts rather than continuously, AI tasks pause automatically when you&rsquo;re on battery power, and the app idles completely while monitoring is off.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="acc">
+      <div class="header-wrapper">
+        <h2 id="q-pause" class="accordion-headline">Can I pause tracking temporarily?</h2>
+        <button class="icon icon-plus" aria-expanded="false" aria-controls="a-pause" aria-labelledby="q-pause"></button>
+      </div>
+      <div class="accordion-panel" id="a-pause" aria-hidden="true">
+        <div class="accordion-content">
+          <p>Yes &mdash; toggle monitoring from the menu bar, use your global hotkey if configured, enable <b>pause during Focus</b>, or turn on <b>presenting mode</b> so blur never interrupts screen sharing.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="acc">
+      <div class="header-wrapper">
+        <h2 id="q-reset" class="accordion-headline">How do I reset or delete everything?</h2>
+        <button class="icon icon-plus" aria-expanded="false" aria-controls="a-reset" aria-labelledby="q-reset"></button>
+      </div>
+      <div class="accordion-panel" id="a-reset" aria-hidden="true">
+        <div class="accordion-content">
+          <p>Quit PostureAI, drag it out of Applications, and delete <code>~/Library/Application Support/PostureAI</code>. That removes statistics, usage logs, calibration, and any downloaded AI model &mdash; there is nothing stored on any server.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="acc">
+      <div class="header-wrapper">
+        <h2 id="q-updates" class="accordion-headline">How do updates work?</h2>
+        <button class="icon icon-plus" aria-expanded="false" aria-controls="a-updates" aria-labelledby="q-updates"></button>
+      </div>
+      <div class="accordion-panel" id="a-updates" aria-hidden="true">
+        <div class="accordion-content">
+          <p>The built-in updater checks daily for new releases on GitHub, shows you what changed, and installs after you approve &mdash; every download is cryptographically signed and verified. You can also check manually anytime from the menu bar. Mac App Store builds update through the App Store instead.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <section class="sosumi-text">
+    <div class="sosumi-content">
+      <p>If you have any questions, <a href="https://github.com/a-normal-chill-guy/PostureAI/issues">open an issue</a>. Apple, AirPods, Vision, and macOS are trademarks of Apple Inc., referenced here only to describe compatible platforms and technologies.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer id="ac-globalfooter">
+  <div class="gf-content">
+    <div class="ac-gf-footer">
+      <div>Copyright &copy; 2026 <a href="../" style="color:inherit;text-decoration:none">PostureAI</a>. All rights reserved.</div>
+      <div class="ac-gf-legal">
+        <a href="../legal/privacy/">Privacy Policy</a>
+        <a href="../legal/terms/">Terms of Use</a>
+        <a href="https://github.com/a-normal-chill-guy/PostureAI/blob/main/LICENSE">License</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  document.querySelectorAll('.accordion-item, .acc').forEach(function(item){
+    var btn=item.querySelector('.icon-plus');
+    var panel=item.querySelector('.accordion-panel')||item.querySelector('[id^="a-"]');
+    var head=item.querySelector('.accordion-headline');
+    function setOpen(open){
+      item.classList.toggle('open',open);
+      if(btn)btn.setAttribute('aria-expanded',String(open));
+      if(panel)panel.setAttribute('aria-hidden',String(!open));
+    }
+    if(head&&!head.id){head.id='h-'+Math.random().toString(36).slice(2);}
+    function toggle(){setOpen(!item.classList.contains('open'));}
+    if(head)head.addEventListener('click',toggle);
+    if(btn)btn.addEventListener('click',function(e){e.stopPropagation();toggle();});
+  });
+})();
+</script>
+</body>
+</html>

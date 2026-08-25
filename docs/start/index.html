@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get Started - PostureAI</title>
+<meta name="description" content="Download, install, and set up PostureAI on your Mac in minutes.">
+<link rel="icon" type="image/png" href="../assets/app-icon.png">
+<meta property="og:title" content="Get Started - PostureAI">
+<meta property="og:description" content="Download, install, and set up PostureAI on your Mac in minutes.">
+<meta property="og:image" content="https://a-normal-chill-guy.github.io/PostureAI/assets/app-icon.png">
+<meta property="og:url" content="https://a-normal-chill-guy.github.io/PostureAI/start/">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#94D1FF">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  font-size:17px;line-height:1.4705882353;font-weight:400;letter-spacing:-.022em;
+  color:#1d1d1f;background:#fff;
+  font-family:"SF Pro Text","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+}
+a{color:#06c;text-decoration:none}
+a:hover{text-decoration:underline;color:#0066cc}
+img{display:block}
+
+#globalnav{
+  position:sticky;top:0;z-index:999;height:44px;
+  background:rgba(148,209,255,0.88);
+  -webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);
+}
+#globalnav .gn-content{max-width:1024px;height:44px;margin:0 auto;padding:0 22px;display:flex;align-items:center;justify-content:space-between}
+.gn-brand{display:flex;align-items:center;gap:8px;color:#1a2744;text-decoration:none}
+.gn-brand:hover{text-decoration:none;opacity:.88}
+.gn-brand img{width:20px;height:20px;border-radius:4px}
+.gn-brand span{font-size:15px;font-weight:400;letter-spacing:-.022em}
+.gn-links{display:flex;align-items:center;gap:28px}
+.gn-links a{font-size:12px;line-height:44px;color:rgba(26,39,68,.7);letter-spacing:-.01em}
+.gn-links a:hover{color:#1a2744;text-decoration:none}
+
+#ac-localnav{
+  position:sticky;top:44px;z-index:998;height:52px;
+  background:rgba(251,251,253,.92);
+  -webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);
+  border-bottom:1px solid rgba(0,0,0,.16);
+}
+#ac-localnav .ln-content{max-width:1024px;height:52px;margin:0 auto;padding:0 22px;display:flex;align-items:center;justify-content:space-between}
+.ln-title{font-size:21px;line-height:1.19048;font-weight:600;letter-spacing:.011em;font-family:"SF Pro Display","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sans-serif;color:#1a2744}
+.ln-links{display:flex;gap:26px}
+.ln-links a{font-size:12px;color:#424245}
+
+.section-hero{padding-top:70px;padding-bottom:50px;text-align:center}
+.hero-content{max-width:980px;margin:0 auto;padding:0 22px}
+.section-hero h1{
+  font-family:"SF Pro Display","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:48px;line-height:1.0834933333;font-weight:600;letter-spacing:-.003em;color:#1a2744;
+}
+.typography-intro{
+  margin:24px auto 0;max-width:720px;
+  font-family:"SF Pro Display","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:21px;line-height:1.381002381;font-weight:400;letter-spacing:.011em;color:#1d1d1f;
+}
+.btn-row{margin-top:30px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 28px;border-radius:980px;font-size:16px}
+.btn-primary{background:#1a2744;color:#fff}
+.btn-primary:hover{background:#2c3d63;text-decoration:none}
+.btn-secondary{border:1px solid #06c;color:#06c}
+.btn-secondary:hover{background:rgba(6,102,204,.06);text-decoration:none}
+
+.getstarted{max-width:760px;margin:0 auto;padding:10px 22px 70px}
+.step{display:flex;gap:26px;border-top:1px solid #d2d2d7;padding:40px 0}
+.step:first-child{border-top:none;padding-top:10px}
+.step-num{
+  flex:none;width:44px;height:44px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(135deg,#5BA3E0,#B8D9F9);
+  color:#fff;font-size:19px;font-weight:600;
+  font-family:"SF Pro Display","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.step-body{flex:1}
+.step-body h3{font-size:21px;line-height:1.19;font-weight:600;letter-spacing:.011em;margin-bottom:10px;font-family:"SF Pro Display","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sans-serif}
+.step-body p{margin-bottom:12px}
+.step-body ul{margin:0 0 12px 22px}
+.step-body li{margin-bottom:7px}
+.callout{
+  background:#f5f5f7;border-radius:14px;padding:18px 20px;margin-bottom:12px;
+  font-size:15px;line-height:1.45;
+}
+.callout b{font-weight:600}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.86em;background:#f5f5f7;border-radius:5px;padding:2px 6px}
+
+.sosumi-text{padding:17px 0 11px;border-top:1px solid #d2d2d7}
+.sosumi-content{max-width:980px;margin:0 auto;padding:0 22px}
+.sosumi-text p{font-size:12px;line-height:1.33337;color:#86868b;padding-bottom:.8em}
+
+#ac-globalfooter{background:#f5f5f7;border-top:1px solid #d2d2d7;font-size:12px;line-height:1.33337;color:#86868b}
+.gf-content{max-width:980px;margin:0 auto;padding:20px 22px 40px}
+.ac-gf-footer{display:flex;flex-wrap:wrap;gap:8px 24px;padding-top:16px;justify-content:space-between}
+.ac-gf-legal a{color:#424245;border-right:1px solid #d2d2d7;padding-right:10px;margin-right:10px}
+.ac-gf-legal a:last-child{border-right:0}
+
+@media only screen and (max-width:734px){
+  .section-hero{padding-top:35px;padding-bottom:35px}
+  .section-hero h1{font-size:32px;line-height:1.125}
+  .step{flex-direction:column;gap:14px}
+}
+@media print{#globalnav,#ac-localnav{position:static;background:#fff}}
+</style>
+</head>
+<body>
+
+<nav id="globalnav" aria-label="Global">
+  <div class="gn-content">
+    <a class="gn-brand" href="../">
+      <img src="https://raw.githubusercontent.com/a-normal-chill-guy/PostureAI/main/docs/assets/app-icon.png" alt="">
+      <span>PostureAI</span>
+    </a>
+    <div class="gn-links">
+      <a href="https://github.com/a-normal-chill-guy/PostureAI/releases">Releases</a>
+      <a href="https://github.com/a-normal-chill-guy/PostureAI/issues">Report an Issue</a>
+    </div>
+  </div>
+</nav>
+
+<nav id="ac-localnav" aria-label="Local">
+  <div class="ln-content">
+    <span class="ln-title">Get Started</span>
+    <div class="ln-links">
+      <a href="../#">Home</a>
+      <a href="../faq/">FAQ</a>
+      <a href="../legal/">Legal</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+  <section class="section-hero header-text-center">
+    <div class="hero-content">
+      <h1>Get Started<br>with PostureAI</h1>
+      <p class="typography-intro center">From download to better posture in about five minutes.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="https://github.com/a-normal-chill-guy/PostureAI/releases">Download the latest release</a>
+        <a class="btn btn-secondary" href="../faq/">Read the FAQ</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="getstarted">
+
+    <section class="step">
+      <span class="step-num">1</span>
+      <div class="step-body">
+        <h3>Check your Mac</h3>
+        <ul>
+          <li><b>Camera mode:</b> any Mac running macOS 13.0 (Ventura) or later, with a built-in or external webcam.</li>
+          <li><b>AirPods mode:</b> macOS 14.0 (Sonoma) or later with AirPods Pro, AirPods Max, or AirPods 3rd generation or newer.</li>
+        </ul>
+        <p>No account, sign-in, or subscription is required.</p>
+      </div>
+    </section>
+
+    <section class="step">
+      <span class="step-num">2</span>
+      <div class="step-body">
+        <h3>Download and install</h3>
+        <p>Grab <code>PostureAI-vX.Y.Z.dmg</code> (or the <code>.zip</code>) from the latest release, then drag <b>PostureAI.app</b> into your Applications folder.</p>
+        <div class="callout"><b>First launch only:</b> because the direct-download build is not notarized with Apple, macOS will ask you to confirm. Right-click <b>PostureAI.app</b> in Applications and choose <b>Open</b>, then confirm. If the app is still blocked, open <b>System Settings &rarr; Privacy &amp; Security</b>, scroll down, and click <b>Open Anyway</b>. This is a one-time step &mdash; every future update installs without warnings.</div>
+      </div>
+    </section>
+
+    <section class="step">
+      <span class="step-num">3</span>
+      <div class="step-body">
+        <h3>Grant permissions</h3>
+        <p>On first run, PostureAI asks for exactly what its features need:</p>
+        <ul>
+          <li><b>Camera</b> &mdash; for camera-based posture monitoring</li>
+          <li><b>Motion &amp; Fitness</b> &mdash; for AirPods head-tilt tracking</li>
+          <li><b>Bluetooth</b> &mdash; to detect your AirPods</li>
+        </ul>
+        <p>You can decline any of these and grant them later in <b>System Settings &rarr; Privacy &amp; Security</b>; only the related feature turns off. Everything is processed on your Mac &mdash; nothing is recorded or uploaded.</p>
+      </div>
+    </section>
+
+    <section class="step">
+      <span class="step-num">4</span>
+      <div class="step-body">
+        <h3>Calibrate</h3>
+        <p>Sit up straight in your natural working position and follow the onboarding calibration. PostureAI learns <i>your</i> baseline so the detection matches your body, not a generic template.</p>
+        <p>Sitting position changed? Click the menu bar icon &rarr; <b>Recalibrate</b> anytime.</p>
+      </div>
+    </section>
+
+    <section class="step">
+      <span class="step-num">5</span>
+      <div class="step-body">
+        <h3>Work as usual</h3>
+        <p>That&rsquo;s it. When you slouch past your threshold, the screen gradually blurs; sit up straight and it clears instantly. Fine-tune sensitivity, reminder style, sounds, and breaks from <b>Settings</b> in the menu bar menu.</p>
+        <p>Updates arrive automatically &mdash; when an update is available you&rsquo;ll be asked once, and PostureAI restarts itself afterwards.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <section class="sosumi-text">
+    <div class="sosumi-content">
+      <p>AirPods posture tracking requires AirPods Pro, AirPods Max, or AirPods 3rd generation or newer, with head-tracking enabled. Apple, AirPods, Vision, and CoreMotion are trademarks of Apple Inc., referenced here only to describe compatible platforms and technologies.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer id="ac-globalfooter">
+  <div class="gf-content">
+    <div class="ac-gf-footer">
+      <div>Copyright &copy; 2026 <a href="../" style="color:inherit;text-decoration:none">PostureAI</a>. All rights reserved.</div>
+      <div class="ac-gf-legal">
+        <a href="../legal/privacy/">Privacy Policy</a>
+        <a href="../legal/terms/">Terms of Use</a>
+        <a href="https://github.com/a-normal-chill-guy/PostureAI/blob/main/LICENSE">License</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

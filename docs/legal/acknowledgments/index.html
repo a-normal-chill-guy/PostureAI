@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PostureAI Acknowledgements</title>
+<meta name="description" content="Third-party software acknowledgements for the PostureAI application.">
+<link rel="icon" type="image/png" href="../../assets/app-icon.png">
+<meta property="og:title" content="Acknowledgements - PostureAI">
+<meta property="og:description" content="Open-source components and their licenses.">
+<meta property="og:image" content="https://a-normal-chill-guy.github.io/PostureAI/assets/app-icon.png">
+<meta property="og:url" content="https://a-normal-chill-guy.github.io/PostureAI/legal/acknowledgments/">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#94D1FF">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  font-size:17px;line-height:1.4705882353;font-weight:400;letter-spacing:-.022em;
+  color:#1d1d1f;background:#fff;
+  font-family:"SF Pro Text","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
+  -moz-font-feature-settings:"kern";-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+}
+a{color:#06c;text-decoration:none}
+a:hover{text-decoration:underline;color:#0066cc}
+img{display:block}
+
+#globalnav{
+  position:sticky;top:0;z-index:999;height:44px;
+  background:rgba(148,209,255,0.88);
+  -webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);
+}
+#globalnav .gn-content{max-width:1024px;height:44px;margin:0 auto;padding:0 22px;display:flex;align-items:center;justify-content:space-between}
+.gn-brand{display:flex;align-items:center;gap:8px;color:#1a2744;text-decoration:none}
+.gn-brand:hover{text-decoration:none;opacity:.88}
+.gn-brand img{width:20px;height:20px;border-radius:4px}
+.gn-brand span{font-size:15px;font-weight:400;letter-spacing:-.022em}
+.gn-links{display:flex;align-items:center;gap:28px}
+.gn-links a{font-size:12px;line-height:44px;color:rgba(26,39,68,.7);letter-spacing:-.01em}
+.gn-links a:hover{color:#1a2744;text-decoration:none}
+
+#ac-localnav{
+  position:sticky;top:44px;z-index:998;height:52px;
+  background:rgba(251,251,253,.92);
+  -webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);
+  border-bottom:1px solid rgba(0,0,0,.16);
+}
+#ac-localnav .ln-content{max-width:1024px;height:52px;margin:0 auto;padding:0 22px;display:flex;align-items:center;justify-content:space-between}
+.ln-title{font-size:21px;line-height:1.19048;font-weight:600;letter-spacing:.011em;font-family:"SF Pro Display","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sans-serif;color:#1a2744}
+.ln-links{display:flex;gap:26px}
+.ln-links a{font-size:12px;color:#424245;letter-spacing:-.01em}
+@media(max-width:734px){.ln-links{display:none}}
+
+.section-hero{padding-top:70px;padding-bottom:50px;text-align:center}
+.hero-content{max-width:980px;margin:0 auto;padding:0 22px}
+.section-hero h1{
+  font-family:"SF Pro Display","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:48px;line-height:1.0834933333;font-weight:600;letter-spacing:-.003em;color:#1a2744;
+}
+.typography-intro{
+  margin:24px auto 0;max-width:720px;
+  font-family:"SF Pro Display","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:21px;line-height:1.381002381;font-weight:400;letter-spacing:.011em;color:#1d1d1f;
+}
+@media only screen and (max-width:1068px){
+  .typography-intro{font-size:19px;line-height:1.4211026316;letter-spacing:.012em}
+  .section-hero{padding-top:50px}
+}
+@media only screen and (max-width:734px){
+  .section-hero{padding-top:35px;padding-bottom:35px}
+  .section-hero h1{font-size:32px;line-height:1.125}
+}
+
+.section-keyline{padding:0}
+.keyline-top-all{border-top:1px solid #d2d2d7}
+
+.tos-body{max-width:980px;margin:0 auto;padding:44px 22px 60px}
+.tos-column{max-width:854px;margin:0 auto}
+.tos-body h3{
+  font-family:"SF Pro Display","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:19px;line-height:1.21053;font-weight:600;letter-spacing:.012em;color:#1a2744;
+  margin:40px 0 14px;
+}
+.tos-body h3:first-of-type{margin-top:0}
+.tos-body p{margin-bottom:14px}
+.tos-body b{font-weight:600}
+.tos-body pre{
+  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  font-size:13px;line-height:1.45;background:#f5f5f7;border-radius:10px;
+  padding:16px 18px;overflow-x:auto;margin-bottom:14px;white-space:pre-wrap;
+}
+
+.sosumi-text{padding:17px 0 11px;border-top:1px solid #d2d2d7}
+.sosumi-content{max-width:980px;margin:0 auto;padding:0 22px}
+.sosumi-text p{font-size:12px;line-height:1.33337;color:#86868b;padding-bottom:.8em}
+
+#ac-globalfooter{background:#f5f5f7;border-top:1px solid #d2d2d7;font-size:12px;line-height:1.33337;color:#86868b}
+.gf-content{max-width:980px;margin:0 auto;padding:20px 22px 40px}
+.ac-gf-breadcrumbs{padding:10px 0 16px;border-bottom:1px solid #d2d2d7;color:#6e6e73}
+.ac-gf-breadcrumbs a{color:#424245}
+.ac-gf-directory{display:flex;flex-wrap:wrap;gap:24px 40px;padding:20px 0;border-bottom:1px solid #d2d2d7}
+.ac-gf-directory-column-section-title{font-size:12px;font-weight:600;color:#1d1d1f;margin-bottom:8px}
+.ac-gf-directory ul{list-style:none}
+.ac-gf-directory li{margin-bottom:8px}
+.ac-gf-directory a{color:#424245}
+.ac-gf-footer{display:flex;flex-wrap:wrap;gap:8px 24px;padding-top:16px;justify-content:space-between}
+.ac-gf-legal a{color:#424245;border-right:1px solid #d2d2d7;padding-right:10px;margin-right:10px}
+.ac-gf-legal a:last-child{border-right:0}
+
+@media print{
+  #globalnav,#ac-localnav{position:static;background:#fff}
+}
+</style>
+</head>
+<body>
+
+<nav id="globalnav" aria-label="Global">
+  <div class="gn-content">
+    <a class="gn-brand" href="../">
+      <img src="https://raw.githubusercontent.com/a-normal-chill-guy/PostureAI/main/docs/assets/app-icon.png" alt="">
+      <span>PostureAI</span>
+    </a>
+    <div class="gn-links">
+      <a href="https://github.com/a-normal-chill-guy/PostureAI/releases">Releases</a>
+      <a href="https://github.com/a-normal-chill-guy/PostureAI/issues">Report an Issue</a>
+    </div>
+  </div>
+</nav>
+
+<nav id="ac-localnav" aria-label="Local">
+  <div class="ln-content">
+    <span class="ln-title">Legal</span>
+    <div class="ln-links">
+      <a href="../privacy/">Privacy Policy</a>
+      <a href="../terms/">Terms of Use</a>
+      <a href="#acknowledgements">Acknowledgements</a>
+    </div>
+  </div>
+</nav>
+
+<main id="acknowledgements">
+
+  <section class="section-hero header-text-center">
+    <div class="hero-content">
+      <h1>PostureAI Acknowledgements</h1>
+      <p class="typography-intro center">Legal Information &amp; Notices</p>
+    </div>
+  </section>
+
+  <section class="section-keyline">
+    <div class="tos-body"><div class="keyline-top-all"></div></div>
+  </section>
+
+  <section class="tos-body">
+    <div class="tos-column">
+
+      <p>Portions of this PostureAI software may utilize the following copyrighted material, the use of which is hereby acknowledged.</p>
+
+      <h3>The Sparkle Project ( Sparkle )</h3>
+      <pre>Copyright (c) 2006-2013 Andy Matuschak.
+Copyright (c) 2009-2013 Elgato Systems GmbH.
+Copyright (c) 2011-2014 Kornel Lesiński.
+Copyright (c) 2015-2017 Mayur Pawashe.
+Copyright (c) 2014 C.W. Betts.
+Copyright (c) 2014 Petroules Corporation.
+Copyright (c) 2014 Big Nerd Ranch.
+All rights reserved.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the &quot;Software&quot;), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+=================
+EXTERNAL LICENSES
+=================
+
+bspatch.c and bsdiff.c, from bsdiff 4.3 &lt;http://www.daemonology.net/bsdiff/&gt;:
+    Copyright (c) 2003-2005 Colin Percival.
+
+sais.c and sais.c, from sais-lite (2010/08/07) &lt;https://sites.google.com/site/yuta256/sais&gt;:
+    Copyright (c) 2008-2010 Yuta Mori.
+
+SUDSAVerifier.m:
+    Copyright (c) 2011 Mark Hamlin.
+
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted providing that the following conditions
+are met:
+1. Redistributions of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS&#x27;&#x27; AND ANY EXPRESS OR
+IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.</pre>
+
+      <h3>Point-Free, Inc. ( swift-composable-architecture )</h3>
+      <pre>MIT License
+
+Copyright (c) 2020 Point-Free, Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</pre>
+
+      <h3>ml-explore ( mlx-swift )</h3>
+      <pre>MIT License
+
+Copyright (c) 2023 ml-explore
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</pre>
+
+      <h3>Microsoft Corporation ( Phi-3 Mini language model weights )</h3>
+      <pre>Microsoft.
+Copyright (c) Microsoft Corporation.
+
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</pre>
+    </div>
+  </section>
+
+  <section class="sosumi-text">
+    <div class="sosumi-content">
+      <p>These acknowledgements apply to the open-source components distributed with PostureAI or downloaded by it as optional model weights. Each component remains the property of its respective authors and is used under the license shown above.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer id="ac-globalfooter">
+  <div class="gf-content">
+    <nav class="ac-gf-breadcrumbs" aria-label="Breadcrumbs">PostureAI &gt; Legal &gt; Acknowledgements</nav>
+    <div class="ac-gf-directory">
+      <div class="ac-gf-directory-column">
+        <h3 class="ac-gf-directory-column-section-title"><a href="../" style="color:inherit;text-decoration:none">PostureAI</a></h3>
+        <ul>
+          <li><a href="https://github.com/a-normal-chill-guy/PostureAI/releases">Download</a></li>
+        </ul>
+      </div>
+      <div class="ac-gf-directory-column">
+        <h3 class="ac-gf-directory-column-section-title"><a href="../" style="color:inherit;text-decoration:none">Legal</a></h3>
+        <ul>
+          <li><a href="../privacy/">Privacy Policy</a></li>
+          <li><a href="../terms/">Terms of Use</a></li>
+          <li><a href="https://github.com/a-normal-chill-guy/PostureAI/blob/main/LICENSE">Software License</a></li>
+        </ul>
+      </div>
+      <div class="ac-gf-directory-column">
+        <h3 class="ac-gf-directory-column-section-title">Support</h3>
+        <ul>
+        </ul>
+      </div>
+    </div>
+    <div class="ac-gf-footer">
+      <div>Copyright &copy; 2026 <a href="../" style="color:inherit;text-decoration:none">PostureAI</a>. All rights reserved.</div>
+      <div class="ac-gf-legal">
+        <a href="../privacy/">Privacy Policy</a>
+        <a href="../terms/">Terms of Use</a>
+        <a href="https://github.com/a-normal-chill-guy/PostureAI/blob/main/LICENSE">License</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

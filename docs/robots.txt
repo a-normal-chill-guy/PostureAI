@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://a-normal-chill-guy.github.io/PostureAI/sitemap.xml
